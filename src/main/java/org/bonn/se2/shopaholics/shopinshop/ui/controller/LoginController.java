@@ -14,7 +14,7 @@ import org.bonn.se2.shopaholics.shopinshop.model.UserSession;
 
 /**
  *
- * @author frank
+ * @author frank der otto
  */
 @RequestScoped
 public class LoginController implements Serializable {
