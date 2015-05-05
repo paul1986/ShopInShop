@@ -97,6 +97,7 @@ public class MainView extends LoginNeededComponent{
         
         menu.addMenuItem(start);
         menu.addMenuItem(shops);
+        menu.addMenuItem(products);
          
         menu.build();
         
