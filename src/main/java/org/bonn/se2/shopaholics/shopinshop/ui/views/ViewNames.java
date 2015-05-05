@@ -14,5 +14,5 @@ public class ViewNames {
     public static final String MAIN = "main";
     public static final String LANDING_PAGE = "landingPage";
     public static final String SHOPS = "shops";
-    
+    public static final String PRODUCTS = "products";
 }

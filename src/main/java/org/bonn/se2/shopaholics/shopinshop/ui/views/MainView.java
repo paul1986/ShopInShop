@@ -93,6 +93,7 @@ public class MainView extends LoginNeededComponent{
         
         MenuItem start = createMenuItem("Start", ViewNames.LANDING_PAGE);
         MenuItem shops = createMenuItem("Shops", ViewNames.SHOPS);
+        MenuItem products = createMenuItem("Produkte", ViewNames.PRODUCTS);
         
         menu.addMenuItem(start);
         menu.addMenuItem(shops);
