@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context antiJARLocking="true" path="/ShopInShop"/>
+<Context antiJARLocking="true" path="/ShopInShop">
+    <Resource name="BeanManager" auth="Container" type="javax.enterprise.inject.spi.BeanManager" factory="org.jboss.weld.resources.ManagerObjectFactory" />
+    <Resource name="jdbc/shopDB" auth="Container"
+              type="javax.sql.DataSource" driverClassName="org.postgresql.Driver"
+              url="jdbc:postgresql://dumbo.inf.fh-bonn-rhein-sieg.de:5432/kmisin2s"
+              username="kmisin2s" password="kmisin2s" maxActive="20" maxIdle="10"
+              maxWait="-1" validationQuery = "SELECT 1"/>
+</Context>
