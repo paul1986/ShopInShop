@@ -5,10 +5,60 @@
  */
 package org.bonn.se2.shopaholics.shopinshop.dao;
 
+import java.io.Serializable;
+import java.util.LinkedList;
+import java.util.List;
+import javax.enterprise.context.RequestScoped;
+import org.bonn.se2.shopaholics.shopinshop.model.Product;
+
 /**
  *
  * @author lucasprochnow
  */
-public class ProductDAO {
-    
+@RequestScoped
+public class ProductDAO implements Serializable {
+
+    public List<Product> getAllProducts() {
+        List<Product> tempList = new LinkedList<Product>();
+
+        //DB Mock-Up
+        Product mock1 = new Product();
+        Product mock2 = new Product();
+        mock1.setArt_name("Mitschrift DBS");
+        mock1.setArt_beschr("Es handelt sich um eine Mitschrift für das Fach Datenbanksysteme bei Prof. Dr. Knolle vom SS2014; Autor ist Otto Mueller");
+        mock1.setArt_nr(1);
+        mock1.setShop_id(1);
+        mock1.setVerfuegbarkeit(30);
+        mock1.setArt_preis(4.0);
+
+        mock2.setArt_name("Nachhilfe SEI");
+        mock2.setArt_beschr("Frank gibt gerne Nachhilfe in Software Engineering. Der Preis & die Verfügbarkeit bezieht sich auf Stunden die Woche");
+        mock2.setArt_nr(2);
+        mock2.setShop_id(2);
+        mock2.setVerfuegbarkeit(4);
+        mock2.setArt_preis(40.30);
+
+        tempList.add(mock1);
+        tempList.add(mock2);
+
+        return tempList;
+    }
+
+    public List<Product> getProductsFromShop(String Shopname) {
+        List<Product> tempList = new LinkedList<Product>();
+
+        //DB Mock-Up
+        Product mock1 = new Product();
+
+        mock1.setArt_name("Nachhilfe SEI");
+        mock1.setArt_beschr("Frank gibt gerne Nachhilfe in Software Engineering. Der Preis & die Verfügbarkeit bezieht sich auf Stunden die Woche");
+        mock1.setArt_nr(2);
+        mock1.setShop_id(2);
+        mock1.setVerfuegbarkeit(4);
+        mock1.setArt_preis(40.30);
+
+        tempList.add(mock1);
+
+        return tempList;
+    }
 }
