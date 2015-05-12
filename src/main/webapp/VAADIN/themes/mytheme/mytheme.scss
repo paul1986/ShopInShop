@@ -40,7 +40,7 @@
   .contentPanel {
       margin-top: 5px;
       min-height: 400px;
-      min-width: 500px;
+      width: 10 vw;
   }
   
   .headerImage {
@@ -76,6 +76,7 @@
   
   .menuItemOne:hover, .menuItemTwo:hover {
       font-weight: bold;
+      cursor : pointer;
   }
   
   .menu {

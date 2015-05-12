@@ -27,7 +27,7 @@ public abstract class LoginNeededComponent extends CustomComponent implements Vi
     private UserController controller;
     
     @Override
-    public void enter(ViewChangeListener.ViewChangeEvent event) {
+    public void enter(ViewChangeListener.ViewChangeEvent event) {      
         if (!controller.checkSession()) {
             navigationEvent.fire(new NavigationEvent(ViewNames.LOGIN));
         } else {
