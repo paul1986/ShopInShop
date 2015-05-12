@@ -22,4 +22,11 @@ public class StyleNames {
     public static final String USER_MENU_ITEM_BOX = "userMenuItemBox";
     public static final String SHOP_LOGO = "shopLogo";
     public static final String APP = "app";
+    public static final String PRODUCTNAME = "productName";
+    public static final String SEPARATOR = "separator";
+    public static final String PRODUCTDESCRIPTION = "productDescription";
+    public static final String PRODUCTPRICE = "productPrice";
+    public static final String CARTBUTTON = "cartButton";
+    public static final String PRODUCTID = "productId";
+    
 }
